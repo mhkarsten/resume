@@ -4,14 +4,26 @@ import { ConnectedRouter } from 'connected-react-router';
 import { history } from '../src/js/store';
 import '../src/css/App.css';
 
+import Home from '../src/js/indexPages/homeIndex';
+import Resume from '../src/js/indexPages/resumeIndex'
+import Navigation from '../src/js/indexPages/navigationIndex';
+import GitInfo from '../src/js/indexPages/gitIndex';
+import Test from '../src/js/indexPages/testIndex';
+
+
 const App: React.FC = () => {
   return (
     <div className="App">
       <ConnectedRouter history={history}>
         <div>
           <Switch>
-            <Route  />
-            <Route  />
+            <Navigation/>
+            <Route exact path = "/" component = {Home}/>
+            <Route exact path = "/resume" component = {Resume}/>
+            <Route exact path = "/git"/>
+            <Route exact path = "/contact"/>
+            <Route exact path = "/test"/>
+            <Route render={() => (<div>Haha! There was no page with that path silly</div>)} />
           </Switch>
         </div>  
       </ConnectedRouter>
