@@ -20,9 +20,9 @@ const App: React.FC = () => {
             <Navigation/>
             <Route exact path = "/" component = {Home}/>
             <Route exact path = "/resume" component = {Resume}/>
-            <Route exact path = "/git"/>
+            <Route exact path = "/git" component = {GitInfo}/>
             <Route exact path = "/contact"/>
-            <Route exact path = "/test"/>
+            <Route exact path = "/test" component = {Test}/>
             <Route render={() => (<div>Haha! There was no page with that path silly</div>)} />
           </Switch>
         </div>  

@@ -2,6 +2,7 @@ import React, { Dispatch } from 'react';
 import { connect } from 'react-redux';
 import { push } from 'connected-react-router';
 import PropTypes from 'prop-types';
+import "../../css/navigaton.css"
 
 interface NavigationProps {
 
