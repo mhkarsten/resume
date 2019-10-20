@@ -2,14 +2,19 @@ import React from 'react';
 import { push } from 'connected-react-router';
 import { connect } from 'react-redux';
 
-interface resumeProps {
+interface GitProps {
 
 
 }
 
-export class Resume extends React.Component<resumeProps> {
-
-
+export class Git extends React.Component<GitProps> {
+    render() {
+        return(
+            <div>
+                Git information goes here
+            </div>
+        );
+    }
 }
 
 const mapDispatchToProps = (dispatch: any) => {
@@ -18,4 +23,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 }
 
-export default connect(null, mapDispatchToProps)(Resume)
+export default connect(null, mapDispatchToProps)(Git)

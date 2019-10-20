@@ -1,1 +1,7 @@
- 
+.textBox {
+    padding: 10px;
+    margin: 10px;
+    display: inline;
+    border-width: 10px;
+    border-color: blue;
+}

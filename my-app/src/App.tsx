@@ -13,18 +13,19 @@ import Test from '../src/js/indexPages/testIndex';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className = "App">
       <ConnectedRouter history={history}>
         <div>
+          <Navigation />
+          <div className = 'body'>
           <Switch>
-            <Navigation/>
             <Route exact path = "/" component = {Home}/>
             <Route exact path = "/resume" component = {Resume}/>
             <Route exact path = "/git" component = {GitInfo}/>
-            <Route exact path = "/contact"/>
             <Route exact path = "/test" component = {Test}/>
             <Route render={() => (<div>Haha! There was no page with that path silly</div>)} />
           </Switch>
+          </div>
         </div>  
       </ConnectedRouter>
     </div>

@@ -2,14 +2,20 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { push } from 'connected-react-router';
 
-interface resumeProps {
+interface ResumeProps {
 
 
 }
 
-export class Resume extends React.Component<resumeProps> {
+export class Resume extends React.Component<ResumeProps> {
 
-
+    render() {
+        return(
+            <div>
+                Resume goes here
+            </div>
+        );
+    }
 }
 
 const mapDispatchToProps = (dispatch: any) => {

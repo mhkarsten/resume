@@ -9,8 +9,13 @@ interface TestProps {
 }
 
 export class Test extends React.Component<TestProps> {
-
-
+    render() {
+        return(
+            <div>
+                Tests Go Here
+            </div>
+        );
+    }
 }
 
 const mapDispatchToProps = (dispatch: any) => {
