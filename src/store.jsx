@@ -5,13 +5,13 @@ import createRootReducer from './reducers.jsx';
 
 export const history = createBrowserHistory();
 
-export default function configureStore(initialState) {
+export default function configureStore(initialState = {}) {
     const store = createStore(
         createRootReducer(history),
         initialState,
         compose(
             applyMiddleware(
-                routerMiddleware(history),
+                routerMiddleware(history)
             ),
         ),
     );
