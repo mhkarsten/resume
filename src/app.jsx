@@ -8,13 +8,12 @@ function app() {
   return (
     <div className="App">
       <ConnectedRouter history = {history}>
-        <div className = 'body'>
-          <Router>
-            <Switch>
-              <Route path = "/" component = "app"/>
-            </Switch>
-          </Router>
-        </div>
+        <Router>
+          <Switch>
+            <Route path = "/" component = "app"/>
+            <Route render={() => (<div>oops! this is not a page</div>)} />
+          </Switch>
+        </Router>
       </ConnectedRouter>
     </div>
   );
