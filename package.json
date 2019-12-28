@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Web Resume",
+  "main": "index.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhkarsten/resume.git"
+  },
+  "author": "Max Karsten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhkarsten/resume/issues"
+  },
+  "homepage": "https://github.com/mhkarsten/resume#readme"
+}
