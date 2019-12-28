@@ -5,12 +5,13 @@ import { createStore } from 'redux'
 import rootReducer from './reducer'
 import App from '.app'
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer)
 
 render(
-    <Provider store="store">
-        
-    </Provider>
+    <Provider store={store}>
+        <App/>
+    </Provider>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
