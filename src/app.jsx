@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Router } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
-import { history } from '../src/js/store';
+import { history } from './store.jsx';
 
 
 function app() {
