@@ -12,7 +12,7 @@ class HomePage extends React.Component{
             <div>
                 <TextBox
                     pageTitle= {data.pageTitle}
-
+                    textItems= {data.textBlocks}
                 />
             </div>
         );

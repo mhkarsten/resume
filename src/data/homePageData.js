@@ -3,7 +3,7 @@ export default function() {
         "pageTitle": "Resume title will go here",
         "textBlocks": [
             {
-                "textItemTitle": "This is the 1st section",
+                "TextItemTitle": "This is the 1st section",
                 "TextParagraphs": [
                     "This is the first paragraph.",
                     "This is the second paragraph.",
@@ -11,7 +11,7 @@ export default function() {
                 ]
             },
             {
-                "textItemTitle": "This is the second section",
+                "TextItemTitle": "This is the second section",
                 "TextParagraphs": [
                     "This is the first paragraph.",
                     "This is the second paragraph.",
@@ -20,7 +20,7 @@ export default function() {
     
             },
             {
-                "textItemTitle": "This is the THIRD section",
+                "TextItemTitle": "This is the THIRD section",
                 "TextParagraphs": [
                     "This is the first paragraph.",
                     "This is the second paragraph.",

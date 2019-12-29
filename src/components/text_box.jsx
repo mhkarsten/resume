@@ -12,7 +12,8 @@ const TextBox = ({textItems, pageTitle}) => {
             {textItems.map((textBlock, j) => {
                 return <TextItem 
                     key = {j}
-                    {...textBlock}
+                    textSections={textBlock.TextParagraphs}
+                    title={textBlock.TextItemTitle}
                 />;
             })}
         </div>
@@ -22,10 +23,10 @@ const TextBox = ({textItems, pageTitle}) => {
 TextBox.propTypes = {
     pageTitle: PropTypes.string.isRequired,
     textItems: PropTypes.arrayOf(
-        PropTypes.shape({        
-        title: PropTypes.string.isRequired,
-        textSections: PropTypes.arrayOf({
-            textP: PropTypes.string.isRequired
+        PropTypes.shape({
+            title: PropTypes.string.isRequired, 
+            textSections: PropTypes.arrayOf({
+                textP: PropTypes.string.isRequired
             }).isRequired
         }).isRequired
     ).isRequired

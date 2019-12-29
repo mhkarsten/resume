@@ -11,7 +11,7 @@ function app() {
     <div className="body">
       <ConnectedRouter history = {history}>
         <Switch>
-          <Route exact path = "/" render={() => (HomePage)} />
+          <Route exact path = "/" component={HomePage} />
           <Route render={() => (<div>oops! this is not a page</div>)} />
         </Switch>
       </ConnectedRouter>
