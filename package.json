@@ -9,6 +9,7 @@
     "babel": "^6.23.0",
     "connected-react-router": "^6.6.1",
     "es6": "0.0.7",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
