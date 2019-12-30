@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 
 const TextItem = ({title, textSections}) => {
     return(
-        <div>
-            <h1 className="textItemTitle">{title}</h1>
+        <div className='textItemBody'>
+            <h2 className="textItemTitle">{title}</h2>
             <div>
-                {textSections.map((text,i) => {
-                    return <p key={i}>{text}</p>;
-                })}
+                {
+                    textSections.map((text, i) => {
+                        return <p key={i}>{text}</p>;
+                    })
+                }
             </div>
         </div>
     );

@@ -1,0 +1,26 @@
+.homePageBody {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 40px;
+}
+
+.textBody {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 20px;
+}
+
+.textItemBody {
+    max-width: 60%;
+    min-width: 30%;
+    margin: 10px;
+}
+
+.pageTitle {
+    text-align: center;
+}

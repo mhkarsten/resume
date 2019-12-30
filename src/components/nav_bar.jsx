@@ -2,21 +2,21 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { push } from 'connected-react-router';
 
+import '../css/navBar.scss';
 
 class NavBar extends React.Component {
     render() {
         const {
             navigate
         } = this.props;
-        console.log(this.props)
-            return (
-                <div>
-                    <div>
-                        <button onClick = {() => navigate('/')}>Home</button>
-                        <button onClick = {() => navigate('/git')}>Git</button>
-                        <button onClick = {() => navigate('/test')}>Test</button>
-                    </div>
+        return (
+            <div className='navBody'>
+                <div className='navContainer'>
+                    <button className='navButton1' onClick = {() => navigate('/')}>Home</button>
+                    <button className='navButton2' onClick = {() => navigate('/git')}>Git</button>
+                    <button className='navButton3' onClick = {() => navigate('/test')}>Test</button>
                 </div>
+            </div>
         );
     }
 }

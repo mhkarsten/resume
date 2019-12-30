@@ -10,7 +10,7 @@ class HomePage extends React.Component{
     render() {
         const data = HomePageData();
         return(
-            <div>
+            <div className='homePageBody'>
                 <TextBox
                     pageTitle= {data.pageTitle}
                     textBlocks= {data.textBlocks}

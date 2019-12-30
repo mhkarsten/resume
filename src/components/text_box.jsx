@@ -9,18 +9,22 @@ const TextBox = ({textBlocks, pageTitle}) => {
             <div className="pageTitle">
                 <h1>{pageTitle}</h1>
             </div>
-            {textBlocks.map((textBlock, j) => {
-                return <TextItem 
-                    key = {j}
-                    title={textBlock.TextItemTitle}
-                    textSections={textBlock.TextSections}
-                />;
-            })
-            }
+            <div className='textBody'>
+                {
+                    textBlocks.map((textBlock, j) => {
+                        return <TextItem
+                            className={'TextItem'+j} 
+                            key={j}
+                            title={textBlock.TextItemTitle}
+                            textSections={textBlock.TextSections}
+                        />;
+                    })
+                }
+            </div>
         </div>
     );
 }
-// TODO add back isRequired
+// TODO add back isReqsuired
 
 TextBox.propTypes = {
     pageTitle: PropTypes.string,
