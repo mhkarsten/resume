@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
+
+
 import '../css/homePage.scss';
 import TextBox from '../components/text_box.jsx';
 import HomePageData from '../data/homePageData.js';
@@ -18,9 +20,10 @@ class HomePage extends React.Component{
     }
 }
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
     return {
-
+        pageTitle: state.pageTitle,
+        textBlocks: state.textBlocks
     }
 }
 
