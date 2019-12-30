@@ -4,7 +4,7 @@ export default function() {
         "textBlocks": [
             {
                 "TextItemTitle": "This is the 1st section",
-                "TextParagraphs": [
+                "TextSections": [
                     "This is the first paragraph.",
                     "This is the second paragraph.",
                     "This is the last paragraph"
@@ -12,7 +12,7 @@ export default function() {
             },
             {
                 "TextItemTitle": "This is the second section",
-                "TextParagraphs": [
+                "TextSections": [
                     "This is the first paragraph.",
                     "This is the second paragraph.",
                     "This is the last paragraph"
@@ -21,7 +21,7 @@ export default function() {
             },
             {
                 "TextItemTitle": "This is the THIRD section",
-                "TextParagraphs": [
+                "TextSections": [
                     "This is the first paragraph.",
                     "This is the second paragraph.",
                     "This is the last paragraph"

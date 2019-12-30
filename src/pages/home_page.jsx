@@ -4,15 +4,14 @@ import '../css/homePage.scss';
 import TextBox from '../components/text_box.jsx';
 import HomePageData from '../data/homePageData.js';
 
-const data = HomePageData();
-
 class HomePage extends React.Component{
     render() {
+        const data = HomePageData();
         return(
             <div>
                 <TextBox
                     pageTitle= {data.pageTitle}
-                    textItems= {data.textBlocks}
+                    textBlocks= {data.textBlocks}
                 />
             </div>
         );

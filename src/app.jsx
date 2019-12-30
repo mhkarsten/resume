@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { history } from './store.jsx';
 
-import NavBar from './components/nav_bar.jsx'
+//import NavBar from './components/nav_bar.jsx'
 import HomePage from './pages/home_page.jsx'
 
 function app() {

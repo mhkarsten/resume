@@ -15,10 +15,8 @@ const TextItem = ({title, textSections}) => {
 }
 
 TextItem.propTypes = {
-    title: PropTypes.string.isRequired,
-    textSections: PropTypes.arrayOf({
-        textP: PropTypes.string.isRequired
-    }).isRequired
+    title: PropTypes.string,
+    textSections: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default TextItem;
