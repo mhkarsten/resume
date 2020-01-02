@@ -1,15 +1,18 @@
 .navBody {
     width: 100%;
-    padding: auto;
-    height: 50px;
+    height: 100px;
     background-color: rgba(42, 43, 46, 1);
-    margin: 0;
-}
-
-button {
-    display: inline-block;
+    top: 0;
+    position: sticky;
 }
 
 .navContainer {
-
+    height: 100%;
+    top: 0px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
 }

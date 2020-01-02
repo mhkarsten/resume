@@ -10,14 +10,14 @@ export default function() {
               },
               "line_linked": {
                   "enable": true,
-                  "opacity": 0.5
+                  "opacity": 0.01
               },
               "move": {
                   "direction": "right",
-                  "speed": 0.5
+                  "speed": 0.2
               },
               "size": {
-                  "value": 1.5
+                  "value": 1
               },
               "opacity": {
                   "anim": {

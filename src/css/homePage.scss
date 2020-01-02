@@ -2,11 +2,11 @@
     width: 60%;
     height: 100%;
     margin: auto;
-    border-color: black;
+    border: 2px solid black;
     border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
     margin-bottom: 40px;
+    margin-top: 50px;
+    background:rgba(255,255,255, 0.2);
 }
 
 .textBody {
@@ -19,6 +19,10 @@
     max-width: 60%;
     min-width: 30%;
     margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background:rgba(255,255,255, 0.1);
+    padding: 10px;
 }
 
 .pageTitle {

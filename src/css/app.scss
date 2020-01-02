@@ -1,6 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
+    margin: 0;
+}
+
+.topSpacer {
+    height: 200px;
+    background-color: rgba(42, 43, 46, 1);
+
+}
+
+.topPart {
+     height: 100%;
+     width: 100%;
 }
 
 .body {
@@ -9,6 +21,7 @@ body {
 }
 
 .backgroundPattern {
+    padding: 0;
     background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%) repeat scroll 0% 0%;
     position:fixed !important;
     left:0;
