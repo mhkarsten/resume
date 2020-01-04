@@ -10,7 +10,7 @@ const NavButton = ({name}) => {
                 <div className="center-content-inner">
                     <div className="content-section content-section-margin">
                         <div className="content-section-grid clearfix">
-                            <a className="button nav-link">
+                            <a className="button nav-link" href='https://www.google.com/'>
                             <div className="bottom"></div>
                             <div className="top">
                                 <div className="label">{name}</div>

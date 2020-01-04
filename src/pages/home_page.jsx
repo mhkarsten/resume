@@ -11,10 +11,27 @@ class HomePage extends React.Component{
         const data = HomePageData();
         return(
             <div className='homePageBody'>
-                <TextBox
-                    pageTitle= {data.pageTitle}
-                    textBlocks= {data.textBlocks}
-                />
+                <div className='aboutSection'>
+                    <h1 className='sectionTitle'>Section 1</h1>
+                    <div className='infoBlock'>
+                        {/* <TextBox
+                            pageTitle= {data.pageTitle}
+                            textBlocks= {data.textBlocks}
+                        /> */}
+                    </div>
+                </div>
+                <div className='seperator'></div>
+                <div className='skillsSection'>
+                    <h1 className='sectionTitle'>Section 2</h1>
+                    <div className='infoBlock'>
+                    </div>
+                </div>
+                <div className='seperator'></div>
+                <div className='educationSection'>
+                    <h1 className='sectionTitle'>Section 3</h1>
+                    <div className='infoBlock'>
+                    </div>
+                </div>
             </div>
         );
     }
