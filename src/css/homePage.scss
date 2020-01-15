@@ -1,0 +1,225 @@
+$main-1: rgb(14, 18, 26);
+$main-2: rgb(8, 12, 20);
+$main-3: rgb(3, 7, 13);
+
+$main-4: rgb(35, 39, 51);
+$accent-1: rgba(37, 60, 120, 1);
+$accent-2: rgba(42, 98, 143, 1);
+$accent-3: rgba(79, 124, 172, 1);
+
+$justavar: rgba(0, 18, 66, 1);
+
+.homePageBody {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.infoBlock {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.aboutSection, .skillsSection, .educationSection {
+    display: flex;
+    height: 700px;
+    padding: 0;
+    padding-left: 20px;
+
+    background: radial-gradient(4rem,
+    rgba(255,255,255,0) 80%, 
+    $main-1 80%, $main-1 99%, 
+    rgba(255,255,255, 0) 
+    ) 0 0,
+    radial-gradient(4rem,
+    rgba(255,255,255,0) 80%, 
+    $main-1 80%, $main-1 99%,  
+    rgba(255,255,255, 0) 
+    ) 4em 4em,
+    radial-gradient(4.7rem,
+    rgba(255,255,255,0) 50%, 
+    $main-3 50%,
+    $main-3 75%, $main-3 99%, 
+    rgba(255,255,255, 0) 
+    ) 4em 4em,
+    radial-gradient(4.7rem,
+    rgba(255,255,255,0) 50%, 
+    $main-3 50%,
+    $main-2 75%, $main-3 99%, 
+    rgba(255,255,255, 0) 
+    ) 0 0;
+    background-size: 8rem 8rem;
+    background-color: $main-2;
+    background-attachment: fixed;
+}
+
+.sectionTitle {
+    width: 10%;
+    margin: auto 0 auto 0;
+    color: white;
+}
+
+.seperator {
+    height: 100px;
+    background-color: rgba(42, 43, 46, 1);
+}
+
+.textBody {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 20px;
+    position: relative;
+}
+
+.textItemBody {
+    max-width: 60%;
+    min-width: 30%;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background:rgba(255,255,255, 0.1);
+    padding: 10px;
+}
+
+.pageTitle {
+    text-align: center;
+}
+
+// $bgcolor: rgb(0, 0, 0);
+// $transparent: rgba(255, 255, 255, 0);
+
+// $size: 2em;
+// $big-size: $size*2;
+// $min: $size*.2;
+// $max: $size*.51;
+
+// $diff: $max - $min;
+
+// .aboutSection {
+//   background: 
+//     linear-gradient(to left bottom,
+//       $transparent $min,
+//       $main-1 $min, $main-1 $max, 
+//       $transparent $max
+//       ) 0 0,
+//     linear-gradient(to right top,
+//       $transparent $min,
+//       $main-1 $min, $main-1 $max, 
+//       $transparent $max
+//       ) $size 0,
+    
+//     linear-gradient(to left bottom,
+//       $transparent $min,
+//       $main-3 $min, $main-3 $max, 
+//       $transparent $min
+//       ) 0 $max,
+//     linear-gradient(to right top,
+//       $transparent $min,
+//       $main-3 $min, $main-3 $max, 
+//       $transparent $min
+//       ) $size $max,
+    
+//     linear-gradient(to left bottom,
+//       $transparent $min,
+//       $main-2 $min, $main-2 $max, 
+//       $transparent $min
+//       ) 0 $max*2,
+//     linear-gradient(to right top,
+//       $transparent $min,
+//       $main-2 $min, $main-2 $max, 
+//       $transparent $min
+//       ) $size $max*2,
+    
+//     linear-gradient(to left bottom,
+//       $transparent $min,
+//       $main-4 $min, $main-4 $max, 
+//       $transparent $min
+//       ) 0 $max*3,
+//     linear-gradient(to right top,
+//       $transparent $min,
+//       $main-4 $min, $main-4 $max, 
+//       $transparent $min
+//       ) $size $max*3,
+//     /* - - - - - */
+//     linear-gradient(to right bottom,
+//       $transparent $min,
+//       $main-4 $min, $main-4 $max, 
+//       $transparent $max
+//       ) 0 0,
+//     linear-gradient(to left top,
+//       $transparent $min,
+//       $main-4 $min, $main-4 $max, 
+//       $transparent $max
+//       ) $size 0,
+    
+//     linear-gradient(to right bottom,
+//       $transparent $min,
+//       $main-1 $min, $main-1 $max, 
+//       $transparent $min
+//       ) 0 $max,
+//     linear-gradient(to left top,
+//       $transparent $min,
+//       $main-1 $min, $main-1 $max, 
+//       $transparent $min
+//       ) $size $max,
+    
+//     linear-gradient(to right bottom,
+//       $transparent $min,
+//       $main-3 $min, $main-3 $max, 
+//       $transparent $min
+//       ) 0 $max*2,
+//     linear-gradient(to left top,
+//       $transparent $min,
+//       $main-3 $min, $main-3 $max, 
+//       $transparent $min
+//       ) $size $max*2,
+    
+//     linear-gradient(to right bottom,
+//       $transparent $min,
+//       $main-2 $min, $main-2 $max, 
+//       $transparent $min
+//       ) 0 $max*3,
+//     linear-gradient(to left top,
+//       $transparent $min,
+//       $main-2 $min, $main-2 $max, 
+//       $transparent $min
+//       ) $size $max*3
+//     ;
+//   background-size:  $big-size $big-size;
+//   background-color: $bgcolor;
+//   background-repeat: repeat;
+//   background-attachment: fixed;
+//   }
+
+// .educationSection {
+//     background: 
+//         /*shape*/
+//         linear-gradient(115deg, transparent 89%, $main-1 0) -128px -96px,
+//         linear-gradient(-115deg, transparent 89%, $main-4 0) 22px -96px,
+//         linear-gradient(-115deg, $main-2 11%, transparent 0) -128px 54px,
+//         linear-gradient(115deg, $accent-1 11%, transparent 0) 22px 54px,
+        
+//         /*shape*/
+//         linear-gradient(-25deg, $main-1 11%, transparent 0) -128px -22px,
+//         linear-gradient(25deg, transparent 89%, $main-4 0) -128px 128px,
+//         linear-gradient(25deg, $main-2 11%, transparent 0) 22px -22px,
+//         linear-gradient(-25deg, transparent 89%, $accent-1 0) 22px 128px,
+//         /*shape*/
+//         linear-gradient(-25deg, $main-1 11%, transparent 0) -53px -96px,
+//         linear-gradient(25deg, transparent 89%, $main-4 0) -53px 54px,
+//         linear-gradient(25deg, $main-2 11%, transparent 0) 97px -96px,
+//         linear-gradient(-25deg, transparent 89%, $accent-1 0) 97px 54px,
+//         /*shape*/
+//         linear-gradient(115deg, transparent 89%, $main-1  0) -53px -21px,
+//         linear-gradient(-115deg, $main-4 11%, transparent 0) -53px 129px,
+//         linear-gradient(-115deg, transparent 89%, $main-2 0) 97px -21px,
+//         linear-gradient(115deg, $accent-1 11%, transparent 0) 97px 129px;
+        
+//     background-color: $main-3;
+//     background-size: 150px 150px;
+//     background-repeat: repeat;
+//     background-attachment: fixed;
+// }

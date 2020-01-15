@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from "react-redux";
 
-class TestPage extends React.Component{
+class GitPage extends React.Component{
     render() {
         return(
             <div>
-                Test Page
+                Git Page
             </div>
         );
     }
@@ -13,15 +13,12 @@ class TestPage extends React.Component{
 
 const mapStateToProps = (state) => {
     return {
-
     }
 }
 
 const mapDispatchToProps = () => {
     return {
-
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TestPage);
-export {}
+export default connect(mapStateToProps, mapDispatchToProps)(GitPage);
