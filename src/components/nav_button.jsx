@@ -5,26 +5,10 @@ import '../css/nav_button.scss'
 
 const NavButton = ({name}) => {
     return (
-        <section id="intro">
-            <div id="intro-content" className="center-content">
-                <div className="center-content-inner">
-                    <div className="content-section content-section-margin">
-                        <div className="content-section-grid clearfix">
-                            <a className="button nav-link" href='https://www.google.com/'>
-                            <div className="bottom"></div>
-                            <div className="top">
-                                <div className="label">{name}</div>
-                                <div className="button-border button-border-left"></div>
-                                <div className="button-border button-border-top"></div>
-                                <div className="button-border button-border-right"></div>
-                                <div className="button-border button-border-bottom"></div>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="button" id="button-6">
+            <div id="spin"></div>
+            <a href="#">{name}</a>
+        </div>
     );
 }
 
