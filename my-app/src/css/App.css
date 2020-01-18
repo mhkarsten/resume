@@ -1,0 +1,12 @@
+.App {
+  background-color: red;
+}
+
+.body {
+  height: 1000px;
+  width: 50%;
+  background-color: cadetblue;
+  margin-left: 25%;
+  margin-top: 0px;
+}
+
